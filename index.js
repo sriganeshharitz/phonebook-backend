@@ -19,6 +19,8 @@ app.use(morgan(function (tokens, req, res) {
   ].join(' ')
 }))
 
+app.use(express.static('build'))
+
 const BASE_URI = '/api/persons'
 
 let persons = [
